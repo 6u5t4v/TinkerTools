@@ -1,0 +1,54 @@
+upgrade_slots:
+  # The default amount of slots is 3.
+  default_amount: 3
+
+  # Slot increaser that lets a player increase the upgrade slots in an item
+  slot_increaser:
+    material: "MAGMA_CREAM"
+    displayname: "&a1+ &7Upgrade slot"
+    lore:
+      - "&7Drag onto an upgradable item"
+      - ""
+
+# Available upgrades
+upgrades:
+  luminence:
+    stats:
+      applies:
+        - "helmets"
+    material: BEACON
+    displayname: "&e&lLuminence"
+    lore:
+      - "&7Make enemies glow behind walls"
+      - " "
+      - "&7Applies to: &a%applicable%"
+    recipe:
+      enabled: false
+      pattern:
+        - "bgg"
+        - "gbg"
+        - "ggg"
+      ingreds:
+        a: SPECTRAL_ARROW
+        b: GLOWSTONE
+  fins:
+    stats:
+      applies:
+        - "boots"
+      modifier: 3
+    material: LEATHER_BOOTS
+    displayname: "&e&lFins"
+    lore:
+      - "&7Increases your movement speed"
+      - "&7when under water"
+      - " "
+      - "&7Applies to: &a%applicable%"
+    recipe:
+      enabled: false
+      pattern:
+        - "bgg"
+        - "gbg"
+        - "ggg"
+      ingreds:
+        a: SPECTRAL_ARROW
+        b: GLOWSTONE
